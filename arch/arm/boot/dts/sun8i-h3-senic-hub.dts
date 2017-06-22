@@ -97,7 +97,7 @@
 		k1@0 {
 			label = "k1";
 			linux,code = <KEY_RESTART>;
-			gpios = <&pio 0 6 GPIO_ACTIVE_HIGH>;
+			gpios = <&pio 6 7 GPIO_ACTIVE_HIGH>;
 		};
 	};
 };
@@ -158,7 +158,7 @@
 
 	/* Reset Button Senic Hub Baseboard */
 	button_senic_reset: key_pins@0 {
-		allwinner,pins = "PA6";
+		allwinner,pins = "PG7";
 		allwinner,function = "gpio_in";
 		allwinner,drive = <SUN4I_PINCTRL_10_MA>;
 		allwinner,pull = <SUN4I_PINCTRL_NO_PULL>;
