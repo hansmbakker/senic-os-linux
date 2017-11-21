@@ -184,6 +184,20 @@
 	status = "okay";
 };
 
+
+&pio {
+    uart2_pins_rts_cts: uart2_rts_cts {
+        pins = "PA2", "PA3";  
+        function = "uart2";
+    };
+};
+
+&uart2 {
+	pinctrl-names = "default";
+	pinctrl-0 = <&uart2_pins &uart2_pins_rts_cts>;
+	status = "okay";
+};
+
 &usbphy {
 	/* USB VBUS is always on */
 	status = "okay";
